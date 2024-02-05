@@ -1,4 +1,4 @@
-// MARK: Spacing constants
+// Spacing constants
 
 final class SpacingConstants {
   static const spacing00 = 2.0;

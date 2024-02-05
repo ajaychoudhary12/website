@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/modules/common/colors/color_constants.dart';
 import 'package:portfolio/modules/common/spacing/spacing_constants.dart';
 
 class RootTabBar extends StatefulWidget {
@@ -12,6 +13,8 @@ class RootTabBar extends StatefulWidget {
 
 class _RootTabBarState extends State<RootTabBar> {
   var selectedIndex = 0;
+
+  var tabColor = Colors.green;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +30,7 @@ class _RootTabBarState extends State<RootTabBar> {
         overlayColor: MaterialStateProperty.all(Colors.transparent),
         indicatorSize: TabBarIndicatorSize.label,
         indicator: BoxDecoration(
-          color: Color(0xFF016DFD),
+          color: ColorConstants.backgroundPrimary,
           borderRadius: _getBorderRadiusGeometry(),
         ),
         padding: EdgeInsets.zero,
@@ -37,7 +40,7 @@ class _RootTabBarState extends State<RootTabBar> {
         isScrollable: true,
         labelColor: Colors.white,
         labelPadding: EdgeInsets.zero,
-        unselectedLabelColor: Colors.blue,
+        unselectedLabelColor: ColorConstants.backgroundPrimary,
         onTap: (index) {
           setState(() {
             selectedIndex = index;

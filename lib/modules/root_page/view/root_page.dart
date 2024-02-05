@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio/modules/common/colors/color_constants.dart';
 import 'package:portfolio/modules/common/spacing/spacing_constants.dart';
 import 'package:portfolio/modules/root_page/widgets/root_tab_bar.dart';
 
@@ -35,8 +36,8 @@ class _RootPageState extends State<RootPage>
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Color(0xFF016DFD),
-              Color(0xFF00CCFF),
+              ColorConstants.backgroundPrimary,
+              ColorConstants.backgroundSecondary,
             ],
           ),
         ),
