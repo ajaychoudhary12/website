@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/modules/common/spacing/spacing_constants.dart';
 
 class RootTabBar extends StatefulWidget {
   const RootTabBar({super.key, required this.controller});
@@ -44,19 +45,27 @@ class _RootTabBarState extends State<RootTabBar> {
         },
         tabs: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8),
+            padding: const EdgeInsets.symmetric(
+              horizontal: SpacingConstants.spacing20,
+            ),
             child: Tab(text: "Articles"),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8),
+            padding: const EdgeInsets.symmetric(
+              horizontal: SpacingConstants.spacing20,
+            ),
             child: Tab(text: "Work"),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8),
+            padding: const EdgeInsets.symmetric(
+              horizontal: SpacingConstants.spacing20,
+            ),
             child: Tab(text: "Projects"),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8),
+            padding: const EdgeInsets.symmetric(
+              horizontal: SpacingConstants.spacing20,
+            ),
             child: Tab(text: "About"),
           ),
         ],

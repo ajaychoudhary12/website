@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio/modules/common/spacing/spacing_constants.dart';
 import 'package:portfolio/modules/root_page/widgets/root_tab_bar.dart';
 
 class RootPage extends StatefulWidget {
@@ -42,7 +43,7 @@ class _RootPageState extends State<RootPage>
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            SizedBox(height: 14),
+            SizedBox(height: SpacingConstants.spacing40),
             Text(
               "Ajay Choudhary",
               style: GoogleFonts.workSans(
@@ -51,7 +52,7 @@ class _RootPageState extends State<RootPage>
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: 10),
+            SizedBox(height: SpacingConstants.spacing30),
             Text(
               "Swift and iOS tutorials",
               style: GoogleFonts.openSans(
@@ -60,7 +61,7 @@ class _RootPageState extends State<RootPage>
                 fontWeight: FontWeight.w600,
               ),
             ),
-            SizedBox(height: 12),
+            SizedBox(height: SpacingConstants.spacing40),
             RootTabBar(controller: _tabController),
           ],
         ),
