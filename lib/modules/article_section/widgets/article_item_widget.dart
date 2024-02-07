@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/modules/article_section/models/article.dart';
+import 'package:portfolio/modules/common/colors/color_constants.dart';
+import 'package:portfolio/modules/common/fonts/font_constants.dart';
 import 'package:portfolio/modules/common/spacing/spacing_constants.dart';
 
 class ArticleItemWidget extends StatelessWidget {
@@ -15,9 +16,12 @@ class ArticleItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.symmetric(vertical: SpacingConstants.spacing20),
-      padding: EdgeInsets.all(SpacingConstants.spacing30),
+      padding: EdgeInsets.symmetric(
+        vertical: SpacingConstants.spacing30,
+        horizontal: SpacingConstants.spacing40,
+      ),
       decoration: BoxDecoration(
-        color: Colors.grey[800],
+        color: ColorConstants.secondaryGrey,
         borderRadius: BorderRadius.circular(10),
       ),
       child: Column(
@@ -26,28 +30,28 @@ class ArticleItemWidget extends StatelessWidget {
           Text(
             article.title,
             textAlign: TextAlign.left,
-            style: GoogleFonts.openSans(
+            style: FontConstants.baseFont.copyWith(
               color: Colors.white,
               fontSize: 25,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.w900,
             ),
           ),
           SizedBox(height: SpacingConstants.spacing20),
           Text(
             article.description,
             textAlign: TextAlign.left,
-            style: GoogleFonts.openSans(
-              color: Colors.grey[400],
-              fontSize: 12,
+            style: FontConstants.baseFont.copyWith(
+              color: ColorConstants.captionText,
+              fontSize: 14,
             ),
           ),
           SizedBox(height: SpacingConstants.spacing20),
           Text(
             article.subtitle,
             textAlign: TextAlign.left,
-            style: GoogleFonts.openSans(
+            style: FontConstants.baseFont.copyWith(
               color: Colors.white,
-              fontSize: 14,
+              fontSize: 16,
             ),
           ),
         ],

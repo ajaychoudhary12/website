@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/modules/article_section/view/article_section.dart';
 import 'package:portfolio/modules/common/colors/color_constants.dart';
+import 'package:portfolio/modules/common/fonts/font_constants.dart';
 import 'package:portfolio/modules/common/spacing/spacing_constants.dart';
 import 'package:portfolio/modules/root_page/widgets/root_tab_bar.dart';
 
@@ -32,7 +32,7 @@ class _RootPageState extends State<RootPage>
       body: Column(
         children: [
           Container(
-            height: 165,
+            height: 170,
             width: MediaQuery.sizeOf(context).width,
             decoration: const BoxDecoration(
               gradient: LinearGradient(
@@ -50,16 +50,16 @@ class _RootPageState extends State<RootPage>
                 SizedBox(height: SpacingConstants.spacing40),
                 Text(
                   "Ajay Choudhary",
-                  style: GoogleFonts.workSans(
+                  style: FontConstants.headline1Font.copyWith(
                     color: Colors.white,
-                    fontSize: 35,
-                    fontWeight: FontWeight.bold,
+                    fontSize: 40,
+                    fontWeight: FontWeight.w900,
                   ),
                 ),
                 SizedBox(height: SpacingConstants.spacing30),
                 Text(
                   "Swift and iOS tutorials",
-                  style: GoogleFonts.openSans(
+                  style: FontConstants.baseFont.copyWith(
                     color: Colors.white,
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
@@ -71,9 +71,9 @@ class _RootPageState extends State<RootPage>
             ),
           ),
           Container(
-            color: Colors.black87,
+            color: ColorConstants.primaryGrey,
             padding: EdgeInsets.all(SpacingConstants.spacing40),
-            height: MediaQuery.of(context).size.height - 165,
+            height: MediaQuery.of(context).size.height - 170,
             child: TabBarView(
               controller: _tabController,
               children: [
