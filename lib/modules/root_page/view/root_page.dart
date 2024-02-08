@@ -3,6 +3,7 @@ import 'package:portfolio/modules/article_section/view/article_section.dart';
 import 'package:portfolio/modules/common/colors/color_constants.dart';
 import 'package:portfolio/modules/common/fonts/font_constants.dart';
 import 'package:portfolio/modules/common/spacing/spacing_constants.dart';
+import 'package:portfolio/modules/projects_section/views/projects_section.dart';
 import 'package:portfolio/modules/root_page/widgets/root_tab_bar.dart';
 
 class RootPage extends StatefulWidget {
@@ -79,7 +80,7 @@ class _RootPageState extends State<RootPage>
               children: [
                 ArticleSection(),
                 Text("Coming Soon."),
-                Text("Coming Soon."),
+                ProjectsSection(),
                 Text("Coming Soon."),
               ],
             ),

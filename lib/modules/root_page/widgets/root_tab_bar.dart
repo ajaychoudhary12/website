@@ -37,7 +37,7 @@ class _RootTabBarState extends State<RootTabBar> {
         indicatorPadding: EdgeInsets.zero,
         dividerColor: Colors.transparent,
         tabAlignment: TabAlignment.center,
-        isScrollable: true,
+        isScrollable: false,
         labelColor: Colors.white,
         labelPadding: EdgeInsets.zero,
         unselectedLabelColor: ColorConstants.backgroundPrimary,
