@@ -40,7 +40,7 @@ class _RootPageState extends State<RootPage>
                 end: Alignment.bottomCenter,
                 colors: [
                   ColorConstants.backgroundPrimary,
-                  ColorConstants.backgroundSecondary,
+                  ColorConstants.backgroundTertiary,
                 ],
               ),
             ),
