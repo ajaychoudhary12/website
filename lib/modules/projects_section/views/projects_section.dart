@@ -9,11 +9,9 @@ class ProjectsSection extends StatelessWidget {
     return Align(
       alignment: Alignment.topCenter,
       child: Text(
-        "Coming Soon.",
-        style: FontConstants.baseFont.copyWith(
-          fontSize: 28,
-          color: Colors.white,
-          fontWeight: FontWeight.w900,
+        "Coming Soon",
+        style: FontConstants.componentTitle.copyWith(
+
         ),
       ),
     );

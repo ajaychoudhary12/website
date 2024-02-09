@@ -5,6 +5,7 @@ import 'package:portfolio/modules/common/fonts/font_constants.dart';
 import 'package:portfolio/modules/common/spacing/spacing_constants.dart';
 import 'package:portfolio/modules/projects_section/views/projects_section.dart';
 import 'package:portfolio/modules/root_page/widgets/root_tab_bar.dart';
+import 'package:portfolio/modules/work_section/views/work_section.dart';
 
 class RootPage extends StatefulWidget {
   const RootPage({super.key});
@@ -51,20 +52,12 @@ class _RootPageState extends State<RootPage>
                 SizedBox(height: SpacingConstants.spacing40),
                 Text(
                   "Ajay Choudhary",
-                  style: FontConstants.headline1Font.copyWith(
-                    color: Colors.white,
-                    fontSize: 40,
-                    fontWeight: FontWeight.w900,
-                  ),
+                  style: FontConstants.headline1Font,
                 ),
                 SizedBox(height: SpacingConstants.spacing30),
                 Text(
                   "Swift and iOS tutorials",
-                  style: FontConstants.baseFont.copyWith(
-                    color: Colors.white,
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600,
-                  ),
+                  style: FontConstants.componentBody,
                 ),
                 SizedBox(height: SpacingConstants.spacing40),
                 RootTabBar(controller: _tabController),
@@ -79,7 +72,7 @@ class _RootPageState extends State<RootPage>
               controller: _tabController,
               children: [
                 ArticleSection(),
-                Text("Coming Soon."),
+                WorkSection(),
                 ProjectsSection(),
                 Text("Coming Soon."),
               ],

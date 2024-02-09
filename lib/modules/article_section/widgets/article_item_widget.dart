@@ -49,29 +49,23 @@ class _ArticleItemWidgetState extends State<ArticleItemWidget> {
             Text(
               widget.article.title,
               textAlign: TextAlign.left,
-              style: FontConstants.baseFont.copyWith(
+              style: FontConstants.componentTitle.copyWith(
                 color: headlineColor,
-                fontSize: 25,
-                fontWeight: FontWeight.w900,
               ),
             ),
             SizedBox(height: SpacingConstants.spacing20),
             Text(
               widget.article.description,
               textAlign: TextAlign.left,
-              style: FontConstants.baseFont.copyWith(
+              style: FontConstants.componentDescription.copyWith(
                 color: ColorConstants.captionText,
-                fontSize: 14,
               ),
             ),
             SizedBox(height: SpacingConstants.spacing20),
             Text(
               widget.article.subtitle,
               textAlign: TextAlign.left,
-              style: FontConstants.baseFont.copyWith(
-                color: Colors.white,
-                fontSize: 16,
-              ),
+              style: FontConstants.componentBody,
             ),
           ],
         ),

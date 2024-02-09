@@ -9,7 +9,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  google_fonts: ^6.1.0
   url_launcher: ^6.2.4
 
 dev_dependencies:
@@ -19,3 +18,11 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  fonts:
+  - family: Halcom
+    fonts:
+      - asset: fonts/Halcom-Black.otf
+      - asset: fonts/Halcom-Bold.otf
+      - asset: fonts/Halcom-ExtraBold.otf
+      - asset: fonts/Halcom-Medium.otf
+      - asset: fonts/Halcom-Regular.otf

@@ -15,22 +15,22 @@ class ArticleSection extends StatelessWidget {
       alignment: Alignment.topCenter,
       child: SizedBox(
         width: screenWidth > fixedWidth ? fixedWidth : screenWidth,
-        child: SizedBox(
-          width: fixedWidth,
-          child: ListView.builder(
-            itemCount: articles.length,
-            shrinkWrap: true,
-            itemBuilder: (context, index) {
-              return GestureDetector(
-                  onTap: () async {
-                    final url = Uri.parse(articles[index].link);
-                    if (await canLaunchUrl(url)) {
-                      await launchUrl(url, webOnlyWindowName: '_blank');
-                    }
-                  },
-                  child: ArticleItemWidget(article: articles[index]));
-            },
-          ),
+        child: ListView.builder(
+          itemCount: Article.articles.length,
+          shrinkWrap: true,
+          itemBuilder: (context, index) {
+            return GestureDetector(
+              onTap: () async {
+                final url = Uri.parse(Article.articles[index].link);
+                if (await canLaunchUrl(url)) {
+                  await launchUrl(url, webOnlyWindowName: '_blank');
+                }
+              },
+              child: ArticleItemWidget(
+                article: Article.articles[index],
+              ),
+            );
+          },
         ),
       ),
     );
