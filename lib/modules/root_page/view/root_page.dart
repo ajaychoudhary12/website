@@ -57,7 +57,10 @@ class _RootPageState extends State<RootPage>
                 SizedBox(height: SpacingConstants.spacing30),
                 Text(
                   "Swift and iOS tutorials",
-                  style: FontConstants.componentBody,
+                  style: FontConstants.componentBody.copyWith(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 SizedBox(height: SpacingConstants.spacing40),
                 RootTabBar(controller: _tabController),

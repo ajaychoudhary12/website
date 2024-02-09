@@ -15,7 +15,7 @@ class WorkItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: SpacingConstants.spacing20),
+      margin: EdgeInsets.all(SpacingConstants.spacing30),
       padding: EdgeInsets.symmetric(
         vertical: SpacingConstants.spacing30,
         horizontal: SpacingConstants.spacing40,
@@ -23,10 +23,12 @@ class WorkItemWidget extends StatelessWidget {
       decoration: BoxDecoration(
         color: ColorConstants.secondaryGrey,
         borderRadius: BorderRadius.circular(10),
-        border: Border.all(
-          color: ColorConstants.backgroundPrimary.withOpacity(0.5),
-          width: 2,
-        ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey[800] ?? Colors.red,
+            offset: Offset(1.0, 1.0),
+          ),
+        ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
