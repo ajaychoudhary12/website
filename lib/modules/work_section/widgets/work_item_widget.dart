@@ -21,6 +21,10 @@ class WorkItemWidget extends StatelessWidget {
         horizontal: SpacingConstants.spacing40,
       ),
       decoration: BoxDecoration(
+        border: Border.all(
+          color: ColorConstants.borderBlue,
+          width: 2,
+        ),
         color: ColorConstants.secondaryGrey,
         borderRadius: BorderRadius.circular(10),
         boxShadow: [

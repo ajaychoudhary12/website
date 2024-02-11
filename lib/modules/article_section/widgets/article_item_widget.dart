@@ -18,7 +18,6 @@ class ArticleItemWidget extends StatefulWidget {
 
 class _ArticleItemWidgetState extends State<ArticleItemWidget> {
   var headlineColor = Colors.white;
-  Border? border;
 
   @override
   Widget build(BuildContext context) {
@@ -27,16 +26,11 @@ class _ArticleItemWidgetState extends State<ArticleItemWidget> {
       onEnter: (_) {
         setState(() {
           headlineColor = ColorConstants.backgroundSecondary;
-          border = Border.all(
-            color: ColorConstants.backgroundPrimary.withOpacity(0.5),
-            width: 2,
-          );
         });
       },
       onExit: (_) {
         setState(() {
           headlineColor = Colors.white;
-          border = null;
         });
       },
       child: Container(
@@ -48,7 +42,6 @@ class _ArticleItemWidgetState extends State<ArticleItemWidget> {
         decoration: BoxDecoration(
           color: ColorConstants.secondaryGrey,
           borderRadius: BorderRadius.circular(10),
-          border: border,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

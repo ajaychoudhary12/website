@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/modules/about_section/views/about_section.dart';
 import 'package:portfolio/modules/article_section/view/article_section.dart';
 import 'package:portfolio/modules/common/colors/color_constants.dart';
 import 'package:portfolio/modules/common/fonts/font_constants.dart';
@@ -34,7 +35,7 @@ class _RootPageState extends State<RootPage>
       body: Column(
         children: [
           Container(
-            height: 170,
+            height: 175,
             width: MediaQuery.sizeOf(context).width,
             decoration: const BoxDecoration(
               gradient: LinearGradient(
@@ -70,14 +71,14 @@ class _RootPageState extends State<RootPage>
           Container(
             color: ColorConstants.primaryGrey,
             padding: EdgeInsets.all(SpacingConstants.spacing40),
-            height: MediaQuery.of(context).size.height - 170,
+            height: MediaQuery.of(context).size.height - 175,
             child: TabBarView(
               controller: _tabController,
               children: [
                 ArticleSection(),
                 WorkSection(),
                 ProjectsSection(),
-                Text("Coming Soon."),
+                AboutSection(),
               ],
             ),
           )

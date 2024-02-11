@@ -26,3 +26,7 @@ flutter:
       - asset: fonts/Halcom-ExtraBold.otf
       - asset: fonts/Halcom-Medium.otf
       - asset: fonts/Halcom-Regular.otf
+
+  assets:
+    - images/
+
