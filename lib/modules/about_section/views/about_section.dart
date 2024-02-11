@@ -53,12 +53,8 @@ class AboutSection extends StatelessWidget {
             ),
             SizedBox(height: SpacingConstants.spacing40),
             Container(
-              margin:
-                  EdgeInsets.symmetric(vertical: SpacingConstants.spacing20),
-              padding: EdgeInsets.symmetric(
-                vertical: SpacingConstants.spacing30,
-                horizontal: SpacingConstants.spacing40,
-              ),
+              margin: _verticalMargin,
+              padding: _padding,
               decoration: BoxDecoration(
                 color: ColorConstants.secondaryGrey,
                 borderRadius: BorderRadius.circular(10),
@@ -81,12 +77,8 @@ class AboutSection extends StatelessWidget {
               ),
             ),
             Container(
-              margin:
-                  EdgeInsets.symmetric(vertical: SpacingConstants.spacing20),
-              padding: EdgeInsets.symmetric(
-                vertical: SpacingConstants.spacing30,
-                horizontal: SpacingConstants.spacing40,
-              ),
+              margin: _verticalMargin,
+              padding: _padding,
               decoration: BoxDecoration(
                 color: ColorConstants.secondaryGrey,
                 borderRadius: BorderRadius.circular(10),
@@ -139,6 +131,13 @@ class AboutSection extends StatelessWidget {
   }
 
   static const _imageSize = 90.0;
+
+  static const _verticalMargin =
+      EdgeInsets.symmetric(vertical: SpacingConstants.spacing20);
+  static const _padding = EdgeInsets.symmetric(
+    vertical: SpacingConstants.spacing30,
+    horizontal: SpacingConstants.spacing40,
+  );
 
   static const _aboutText =
       "I'm an iOS developer who loves writing expressive and efficient code in Swift. I'm passionate about organized, documented code and developing API's that feel natural to use and easy to understand. \n\nI aim to provide valuable content, and I encourage you to reach out with any questions or feedback you may have. Your input is genuinely appreciated.";
