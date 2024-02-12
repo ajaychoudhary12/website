@@ -20,15 +20,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  fonts:
-  - family: Halcom
-    fonts:
-      - asset: fonts/Halcom-Black.otf
-      - asset: fonts/Halcom-Bold.otf
-      - asset: fonts/Halcom-ExtraBold.otf
-      - asset: fonts/Halcom-Medium.otf
-      - asset: fonts/Halcom-Regular.otf
-
   assets:
     - images/
 

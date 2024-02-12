@@ -9,7 +9,7 @@ final class FontConstants {
   );
 
   static final componentTitle = GoogleFonts.roboto(
-    fontSize: 24,
+    fontSize: 22,
     color: Colors.white,
     fontWeight: FontWeight.w800,
   );
