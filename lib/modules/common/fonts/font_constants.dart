@@ -1,34 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 final class FontConstants {
-  static final headline1Font = TextStyle(
-    fontFamily: _halcomFontFamily,
-    fontSize: 38,
-    color: Colors.white,
+  static final headline1Font = GoogleFonts.roboto(
     fontWeight: FontWeight.w900,
+    color: Colors.white,
+    fontSize: 38,
   );
-  static final componentTitle = TextStyle(
-    fontFamily: _halcomFontFamily,
+
+  static final componentTitle = GoogleFonts.roboto(
     fontSize: 24,
     color: Colors.white,
-    fontWeight: FontWeight.bold,
+    fontWeight: FontWeight.w800,
   );
-  static final componentBody = TextStyle(
-    fontFamily: _halcomFontFamily,
+
+  static final componentBody = GoogleFonts.roboto(
     color: Colors.white,
     fontSize: 15,
   );
-  static final componentDescription = TextStyle(
-    fontFamily: _halcomFontFamily,
+
+  static final componentDescription = GoogleFonts.roboto(
     color: Colors.white,
     fontSize: 14,
   );
 
-  static final componentSmall = TextStyle(
-    fontFamily: _halcomFontFamily,
+  static final componentSmall = GoogleFonts.roboto(
     color: Colors.white,
     fontSize: 12,
   );
-
-  static const _halcomFontFamily = 'Halcom';
 }

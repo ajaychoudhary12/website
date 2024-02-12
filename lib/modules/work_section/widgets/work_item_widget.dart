@@ -3,6 +3,7 @@ import 'package:portfolio/modules/common/colors/color_constants.dart';
 import 'package:portfolio/modules/common/fonts/font_constants.dart';
 import 'package:portfolio/modules/common/spacing/spacing_constants.dart';
 import 'package:portfolio/modules/work_section/models/work_item.dart';
+import 'package:super_bullet_list/bullet_list.dart';
 
 class WorkItemWidget extends StatelessWidget {
   const WorkItemWidget({
@@ -51,12 +52,18 @@ class WorkItemWidget extends StatelessWidget {
             ),
           ),
           SizedBox(height: SpacingConstants.spacing20),
-          Text(
-            workItem.subtitle,
-            textAlign: TextAlign.left,
-            style: FontConstants.componentBody.copyWith(
-              height: 2,
-            ),
+          SuperBulletList(
+            iconColor: Colors.white,
+            iconSize: 10,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            items: [
+              for (final point in workItem.points)
+                Text(
+                  point,
+                  textAlign: TextAlign.left,
+                  style: FontConstants.componentBody,
+                ),
+            ],
           ),
         ],
       ),
