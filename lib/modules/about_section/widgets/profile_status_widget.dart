@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:portfolio/modules/common/colors/color_constants.dart';
 import 'package:portfolio/modules/common/fonts/font_constants.dart';
@@ -37,7 +36,7 @@ class CurrentProfileStatus extends StatelessWidget {
           SizedBox(width: SpacingConstants.spacing20),
           Text(
             statusText,
-            style: FontConstants.componentDescription.copyWith(
+            style: FontConstants.componentSmall.copyWith(
               color: ColorConstants.activeGreenPrimary,
             ),
           ),

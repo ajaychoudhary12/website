@@ -32,10 +32,10 @@ class _RootPageState extends State<RootPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: ColorConstants.primaryGrey,
       body: Column(
         children: [
           Container(
-            height: 175,
             width: MediaQuery.sizeOf(context).width,
             decoration: const BoxDecoration(
               gradient: LinearGradient(
@@ -55,22 +55,29 @@ class _RootPageState extends State<RootPage>
                   "Ajay Choudhary",
                   style: FontConstants.headline1Font,
                 ),
-                SizedBox(height: SpacingConstants.spacing30),
-                Text(
-                  "Swift and iOS tutorials",
-                  style: FontConstants.componentBody.copyWith(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
+                if (!(MediaQuery.sizeOf(context).width <= 400))
+                  Column(
+                    children: [
+                      SizedBox(height: SpacingConstants.spacing30),
+                      Text(
+                        "Swift and iOS tutorials",
+                        style: FontConstants.componentBody.copyWith(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
                   ),
-                ),
                 SizedBox(height: SpacingConstants.spacing40),
                 RootTabBar(controller: _tabController),
+                SizedBox(height: SpacingConstants.spacing40),
               ],
             ),
           ),
           Container(
             color: ColorConstants.primaryGrey,
-            padding: EdgeInsets.all(SpacingConstants.spacing40),
+            padding:
+                EdgeInsets.symmetric(horizontal: SpacingConstants.spacing40),
             height: MediaQuery.of(context).size.height - 175,
             child: TabBarView(
               controller: _tabController,

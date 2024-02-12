@@ -19,7 +19,6 @@ class _RootTabBarState extends State<RootTabBar> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 235,
       height: 28,
       decoration: BoxDecoration(
         color: Colors.white,

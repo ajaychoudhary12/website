@@ -21,11 +21,12 @@ class AboutSection extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
+              SizedBox(height: SpacingConstants.spacing40),
               Row(
                 children: [
                   CurrentProfileStatus(
-                      statusText:
-                          "Learning Server Side development using Vapor"),
+                    statusText: "Learning Server Side development using Vapor",
+                  ),
                 ],
               ),
               SizedBox(height: SpacingConstants.spacing40),
