@@ -16,14 +16,14 @@ class WorkItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(SpacingConstants.spacing30),
+      margin: EdgeInsets.only(top: SpacingConstants.spacing40),
       padding: EdgeInsets.symmetric(
         vertical: SpacingConstants.spacing30,
         horizontal: SpacingConstants.spacing40,
       ),
       decoration: BoxDecoration(
         border: Border.all(
-          color: ColorConstants.borderBlue,
+          color: ColorConstants.backgroundPrimary,
           width: 2,
         ),
         color: ColorConstants.secondaryGrey,

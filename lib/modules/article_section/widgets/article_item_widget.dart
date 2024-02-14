@@ -25,7 +25,7 @@ class _ArticleItemWidgetState extends State<ArticleItemWidget> {
       cursor: SystemMouseCursors.click,
       onEnter: (_) {
         setState(() {
-          headlineColor = ColorConstants.backgroundSecondary;
+          headlineColor = ColorConstants.backgroundPrimary;
         });
       },
       onExit: (_) {
@@ -34,7 +34,7 @@ class _ArticleItemWidgetState extends State<ArticleItemWidget> {
         });
       },
       child: Container(
-        margin: EdgeInsets.symmetric(vertical: SpacingConstants.spacing20),
+        margin: EdgeInsets.only(top: SpacingConstants.spacing40),
         padding: EdgeInsets.symmetric(
           vertical: SpacingConstants.spacing30,
           horizontal: SpacingConstants.spacing40,
