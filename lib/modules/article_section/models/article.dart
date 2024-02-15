@@ -13,6 +13,14 @@ final class Article {
 
   static const articles = [
     Article(
+      title: "Builder pattern in Swift",
+      description: "Published on Feb 15, 2024",
+      subtitle:
+          "In this article we will learn about the builder pattern and how to use it in Swift.",
+      link:
+          "https://medium.com/@ajaychoudhary_/builder-pattern-in-swift-ea6bb8a9f606",
+    ),
+    Article(
       title: "Understanding Factory Pattern in Swift with Example",
       description: "Published on Jan 29, 2024",
       subtitle:
