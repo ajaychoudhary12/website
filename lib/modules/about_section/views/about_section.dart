@@ -25,7 +25,8 @@ class AboutSection extends StatelessWidget {
               Row(
                 children: [
                   CurrentProfileStatus(
-                    statusText: "Learning Server Side development using Vapor",
+                    statusText:
+                        "Learning Server Side development using Spring Boot",
                   ),
                 ],
               ),
@@ -132,7 +133,7 @@ class AboutSection extends StatelessWidget {
               ),
               Spacer(),
               _techStackImage(
-                imageName: 'vapor.png',
+                imageName: 'spring.png',
                 imageSize: _imageSize90,
               ),
               Spacer(flex: 2),
@@ -173,5 +174,5 @@ class AboutSection extends StatelessWidget {
   static const _aboutText =
       "I'm an iOS developer who loves writing expressive and efficient code in Swift. I'm passionate about organized, documented code and developing API's that feel natural to use and easy to understand. \n\nI aim to provide valuable content, and I encourage you to reach out with any questions or feedback you may have. Your input is genuinely appreciated.";
   static const _techStackText =
-      "In addition to iOS development, I possess expertise in building cross-platform applications using Flutter and have some experience with Vapor. The following are some of the programming languages and techstacks I have worked with:";
+      "In addition to iOS development, I possess expertise in building cross-platform applications using Flutter and have some experience with Spring Boot. The following are some of the programming languages and techstacks I have worked with:";
 }
